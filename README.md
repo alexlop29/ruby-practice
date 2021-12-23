@@ -1,5 +1,2 @@
-# Learn-Ruby-the-Hard-Way
+# Ruby Practice
 Tracks progress through exercises
-
-## Book
-https://learnrubythehardway.org/book/
