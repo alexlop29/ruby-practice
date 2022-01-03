@@ -1,11 +1,22 @@
-# Define Variables
+# NOTE: (alopez) Run commands within an interactive Ruby terminal.
+# > irb
 
-name = "Alexander"
-puts name # puts - print statement
+# Variable
+irb(main):001:0> name = "Alexander"
+=> "Alexander"
+irb(main):002:0> @name
+=> nil
 
-# Array - List
-address = ["123", "Downtown", "NY", "11133"]
-puts address
+# Array
+irb(main):003:0> address = ["123","Anywhere","Street"]
+=> ["123", "Anywhere", "Street"]
+irb(main):004:0> @address
+=> nil
+irb(main):005:0> puts address
+123
+Anywhere
+Street
+=> nil
 
 # Puts returns a nil value
 puts "Alexander"
