@@ -21,11 +21,6 @@ Street
 irb(main):008:0> @address
 => nil
 
-# Puts returns a nil value
-puts "Alexander"
-# p returns a value
-p "Ally"
-
 # EXAMPLE: DIFFERENCE BETWEEN 'puts' AND 'p'
 # 'puts' RETURNS A 'nil' VALUE
 irb(main):010:0> puts "Alexander"
