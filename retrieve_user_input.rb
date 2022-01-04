@@ -21,6 +21,7 @@ name = gets
 puts "What is your name?"
 name2 = gets.chomp
 
+# SUB-EXAMPLE: CONDITIONAL
 if name == "Alexander"
   puts "MATCH"
 else
