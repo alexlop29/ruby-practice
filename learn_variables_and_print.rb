@@ -1,24 +1,39 @@
-# NOTE: (alopez) Run commands within an interactive Ruby terminal.
+# NOTE: (alopez) These examples are executed within an interactive Ruby terminal.
 # > irb
 
-# Variable
-irb(main):001:0> name = "Alexander"
+# EXAMPLE: VARIABLE
+irb(main):002:0> name = "Alexander"
 => "Alexander"
-irb(main):002:0> @name
+irb(main):003:0> puts name
+Alexander
+=> nil
+irb(main):004:0> @name
 => nil
 
-# Array
-irb(main):003:0> address = ["123","Anywhere","Street"]
+# EXAMPLE: ARRAY
+irb(main):006:0> address = ["123","Anywhere","Street"]
 => ["123", "Anywhere", "Street"]
-irb(main):004:0> @address
-=> nil
-irb(main):005:0> puts address
+irb(main):007:0> puts address
 123
 Anywhere
 Street
+=> nil
+irb(main):008:0> @address
 => nil
 
 # Puts returns a nil value
 puts "Alexander"
 # p returns a value
 p "Ally"
+
+# EXAMPLE: DIFFERENCE BETWEEN 'puts' AND 'p'
+# 'puts' RETURNS A 'nil' VALUE
+irb(main):010:0> puts "Alexander"
+Alexander
+=> nil
+# 'p' RETURNS A NON 'nil' VALUE
+irb(main):011:0> p "Alexander"
+"Alexander"
+=> "Alexander"
+irb(main):012:0> @Alexander
+=> nil
