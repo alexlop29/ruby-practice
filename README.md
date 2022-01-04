@@ -4,5 +4,5 @@
 | Variables, Arrays, Printing | Placeholder|
 | Paragraph   | Text        |
 
-# References
+# REFERENCES
 - Comprehensive Ruby Programming by Jordan Hudgens
