@@ -1,6 +1,3 @@
-# NOTE: 
-# > irb
-
 # EXAMPLE: 'gets'
 irb(main):001:0> puts "What is your name?"
 What is your name?
@@ -21,7 +18,6 @@ Alexander
 # EXAMPLE: DIFFERENCE BETWEEN 'gets' ANS 'gets.chomp'
 puts "What is your name?"
 name = gets
-
 puts "What is your name?"
 name2 = gets.chomp
 
@@ -36,6 +32,7 @@ if name2 == "Alexander"
 else
   puts "NO"
 end
+
 # OUTPUT
  bundle exec ruby main.rb
 What is your name?
