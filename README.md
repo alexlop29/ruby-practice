@@ -1,13 +1,8 @@
-# Ruby Practice
-Tracks progress through exercises
-
-The table below maps topics to their corresponding exercises:
+# RUBY PRACTICE
 | Topic      | Exercise(s) |
 | ----------- | ----------- |
 | Variables, Arrays, Printing | Placeholder|
 | Paragraph   | Text        |
 
-<bold>VARIABLES, ARRAYS, AND PRINTING</bold>
-
-# Resources
-- Comprehensive Ruby Programming - Packt
+# References
+- Comprehensive Ruby Programming by Jordan Hudgens
