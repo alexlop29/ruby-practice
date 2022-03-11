@@ -1,3 +1,11 @@
+# Classes
+
+> An object-oriented program involves classes and objects. 
+>
+>A class is the blueprint from which individual objects are created.
+
+https://www.tutorialspoint.com/ruby/ruby_classes.htm
+
 # Methods
 
 > Ruby methods are used to bundle one or more repeatable statements into a single unit.
