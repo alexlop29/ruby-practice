@@ -1,4 +1,4 @@
-# Table of Contents
+# Definitions
 - [Classes](#Classes)
 - [Gems](#Gems)
 - [Methods](#Methods)
