@@ -1,3 +1,10 @@
+# Table of Contents
+- [Classes](#Classes)
+- [Gems](#Gems)
+- [Methods](#Methods)
+- [Modules](#Modules)
+- [Variables](#Variables)
+
 # Classes
 
 > An object-oriented program involves classes and objects. 
@@ -5,6 +12,16 @@
 >A class is the blueprint from which individual objects are created.
 
 https://www.tutorialspoint.com/ruby/ruby_classes.htm
+
+# Gems
+
+> Gems are modules and classes that provide additional functionality to an application.
+>
+> Gems are nothing more than Ruby code files that perform certain tasks.
+> 
+> The main repository for gems can be found at [rubygems.org]( https://rubygems.org/ )
+
+Jordan Hudgens - Comprehensive Ruby Programming
 
 # Methods
 
@@ -51,5 +68,3 @@ https://www.tutorialspoint.com/ruby/ruby_modules.htm
 > The syntax for this variable is @@ .
 
 Jordan Hudgens - Comprehensive Ruby Programming
-
-
