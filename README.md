@@ -1,9 +1,21 @@
 # Definitions
+- [Blocks](#Blocks)
 - [Classes](#Classes)
 - [Gems](#Gems)
 - [Methods](#Methods)
 - [Modules](#Modules)
 - [Variables](#Variables)
+
+# Blocks
+> A block is the same thing as a method, but it does not belong to an object.
+
+https://www.geeksforgeeks.org/ruby-blocks/
+
+> In other programming languages, a block is called a closure.
+> 
+> Blocks allow you to group statements together and encapsulate behavior.
+
+Jordan Hudgens - Comprehensive Ruby Programming
 
 # Classes
 
