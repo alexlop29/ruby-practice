@@ -36,7 +36,19 @@ References: “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by
 > 
 > An example group defines what you’re testing—in this case. 
 
-# Sharing Setup
+# Hooks, Helpers, let
+
+> RSpec hooks run automatically at specific times during testing.
+>
+> - The setup code is shared across specs, but the individual instance is not. Every example gets its own instance.
+> Drawbacks:
+> 
+> - 
+> 
+> Helper methods are regular Ruby methods; you control when these run.
+>
+> RSpec’s let construct initializes data on demand.
+
 
 # Running
 `bundle exec rspec`
