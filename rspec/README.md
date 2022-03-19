@@ -28,9 +28,18 @@ References: “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by
 
 > Developers start with an outline and fill it in as they go.
 
+> “The three methods—describe, it, and expect—are the core APIs of RSpec.”
+
+
 ## Rspec.describe
 > The RSpec.describe block creates an example group. 
 > 
 > An example group defines what you’re testing—in this case. 
 
+# Sharing Setup
 
+# Running
+`bundle exec rspec`
+
+# List of Built-In RSpec Methods
+https://rspec.info/documentation/3.5/rspec-expectations/method_list.html
