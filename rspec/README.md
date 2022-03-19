@@ -16,5 +16,21 @@ Additional Info on BDD: https://semaphoreci.com/community/tutorials/getting-star
 
 References: “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by Myron Marston, Ian Dees”
 
+## Tests vs. Specs vs. Examples
+> A test validates that a bit of code is working properly.
+>
+> A spec describes the desired behavior of a bit of code.
+>
+> An example shows how a particular API is intended to be used.”
+
+
+# Rspec Structure
+
+> Developers start with an outline and fill it in as they go.
+
+## Rspec.describe
+> The RSpec.describe block creates an example group. 
+> 
+> An example group defines what you’re testing—in this case. 
 
 
