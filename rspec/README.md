@@ -23,6 +23,16 @@ References: “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by
 >
 > An example shows how a particular API is intended to be used.”
 
+## Different Types of Specs
+> Acceptance specs describe a feature in an end-to-end, black-box style that exercises the entire system.
+> 
+> - hard to write, comparatively brittle, and slow
+> 
+> - useful for large-scale refactoring
+>
+> Unit specs focus on individual units of code—often as small as a single object or method.
+>
+> Code that interacts with an external service—such as a database or third-party REST API—should have an integration spec.
 
 # Rspec Structure
 
