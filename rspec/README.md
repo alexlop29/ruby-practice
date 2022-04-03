@@ -41,10 +41,15 @@ References: “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by
 > RSpec hooks run automatically at specific times during testing.
 >
 > - The setup code is shared across specs, but the individual instance is not. Every example gets its own instance.
-> Drawbacks:
 > 
-> - 
+> - Drawbacks:
 > 
+>   -  If you misspell @instance, Ruby will silently return nil instead of aborting with a failure right away.
+>
+>   - To refactor your specs to use instance variables, you’ve had to go through the entire file and replace instance with @instance.
+>
+>   - When you initialize an instance variable in a before hook, you pay the cost of that setup time for all the examples in the group, even if some of them never use the instance variable.
+>
 > Helper methods are regular Ruby methods; you control when these run.
 >
 > RSpec’s let construct initializes data on demand.

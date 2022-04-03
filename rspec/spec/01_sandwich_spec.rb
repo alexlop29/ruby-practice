@@ -6,7 +6,6 @@
 Sandwich = Struct.new(:taste, :toppings)
 
 RSpec.describe 'An ideal sandwich' do
-  before { @sandwich = Sandwich.new('delicious', []) }
   it 'is delicious' do
     # Arrange
     sandwich = Sandwich.new('delicious', [])
