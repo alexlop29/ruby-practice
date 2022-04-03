@@ -54,9 +54,46 @@ References: “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by
 >
 > RSpec’s let construct initializes data on demand.
 
+# Context
+
+> This method groups a set of examples and their setup code together with a common description.
+>
+> We tend to use context for phrases that modify the object we’re testing.
+>
+> If you find yourself running the same subset of specs repeatedly, you can save time by marking them as focused. To do so, simply add an f to the beginning of the RSpec method name:
+> 
+>  - context becomes fcontext
+>
+>  - it becomes fit
+>
+>  - describe becomes fdescribe”
+
 
 # Running
 `bundle exec rspec`
+
+## Identify slow tests.
+
+```
+bundle exec rspec --profile 2
+```
+
+## Run Specific Examples
+
+```
+bundle exec rspec name_of_spec.rb
+bundle exec rspec -e name_of_example
+bundle exec rspec --only-failures
+```
+
+# Marking Incomplete Work
+
+> RSpec provides the pending method for this purpose. 
+> 
+> You can mark a spec as pending by adding the word pending anywhere inside the spec body, along with an explanation of why the test shouldn’t pass yet. 
+>
+> The location matters; any lines before the pending call will still be expected to pass.
+
 
 # List of Built-In RSpec Methods
 https://rspec.info/documentation/3.5/rspec-expectations/method_list.html
