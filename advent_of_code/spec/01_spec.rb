@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require '01'
+
 RSpec.describe sonar_sweep do
   let(:input) do
     <<~TXT
@@ -16,7 +18,7 @@ RSpec.describe sonar_sweep do
     TXT
   end
 
-  it 'counts the number of times a depth measurement' do
+  it 'counts the number of times a depth measurement increases' do
     solution = sonar_sweep(input)
 
     expect(solution).to eq(7)

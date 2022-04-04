@@ -116,3 +116,4 @@ bundle exec rspec --only-failures
 - “Effective Testing with RSpec 3 Build Ruby Apps with Confidence by Myron Marston, Ian Dees”
 - [Getting Started with RSpec](https://semaphoreci.com/community/tutorials/getting-started-with-rspec)
 - [List of Built-In RSpec Methods](https://rspec.info/documentation/3.5/rspec-expectations/method_list.html)
+- [Setting up and Using RSpec](https://medium.com/@tyler_brewer2/setting-up-and-using-rspec-b170b64bb89)
