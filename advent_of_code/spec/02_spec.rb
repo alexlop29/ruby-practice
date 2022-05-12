@@ -21,5 +21,4 @@ RSpec.describe 'dive' do
   it 'multiplies horizontal position by depth' do
     expect(multiply_position_and_depth(input)).to eq(150)
   end
-
 end
