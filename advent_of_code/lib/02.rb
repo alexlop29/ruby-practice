@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def calculate_position_and_depth(input)
   directions = input.split("\n")
 
@@ -16,17 +18,20 @@ def calculate_position_and_depth(input)
     end
   end
 
-  final_answer = horizontal_position * depth
+  return "position #{horizontal_position} depth #{depth}"
+end
 
-  puts "position #{horizontal_position}, depth #{depth}"
+def multiply_position_and_depth(input)
+    calculations = calculate_position_and_depth(input)
+    split_calculations = calculations.split(' ')
+    final_answer = split_calculations[1].to_i * split_calculations[3].to_i
 
-  return "position #{horizontal_position}, depth #{depth}"
-
+    return final_answer
 end
 
 DIRECTORY = __dir__
 PLANNED_COURSE = File.join(DIRECTORY, '../inputs/02.txt')
 PLANNED_COURSE_DATA = File.read(PLANNED_COURSE)
 
-calculate_position_and_depth(PLANNED_COURSE_DATA)
-
+puts calculate_position_and_depth(PLANNED_COURSE_DATA)
+puts multiply_position_and_depth(PLANNED_COURSE_DATA)
