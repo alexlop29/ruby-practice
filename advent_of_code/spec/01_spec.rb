@@ -2,7 +2,7 @@
 
 require '01'
 
-RSpec.describe 'day 1: sonar_sweep' do
+RSpec.describe 'sonar sweep' do
   let(:input) do
     <<~TXT
       199

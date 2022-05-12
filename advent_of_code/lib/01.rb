@@ -15,6 +15,8 @@ def depth_measurement_increase(input)
   end
 
   puts counter
+
+  return counter
 end
 
 def sliding_window_increase(input)
@@ -33,6 +35,8 @@ def sliding_window_increase(input)
   end
 
   puts counter
+
+  return counter
 end
 
 DIRECTORY = __dir__
