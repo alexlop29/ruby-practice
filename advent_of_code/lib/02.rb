@@ -7,12 +7,9 @@ def calculate_position_and_depth(input)
   directions.each_with_index do |data, _index|
     direction_by_change = data.split(' ')
     case direction_by_change[0]
-    when 'forward'
-      horizontal_position += direction_by_change[1].to_i
-    when 'up'
-      depth -= direction_by_change[1].to_i
-    else
-      depth += direction_by_change[1].to_i
+    when 'forward' then horizontal_position += direction_by_change[1].to_i
+    when 'up' then depth -= direction_by_change[1].to_i
+    else depth += direction_by_change[1].to_i
     end
   end
   return "position #{horizontal_position} depth #{depth}"
