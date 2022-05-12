@@ -1,4 +1,4 @@
-def sonar_sweep(input)
+def depth_measurement_increase(input)
   split_sea_level_data = input.split
   int_sea_level_data = split_sea_level_data.map(&:to_i)
 
@@ -17,11 +17,30 @@ def sonar_sweep(input)
   return counter
 end
 
+def sliding_window_increase(input)
+  split_sea_level_data = input.split
+  int_sea_level_data = split_sea_level_data.map(&:to_i)
+
+  counter = 0 
+
+  int_sea_level_data.each_with_index do |_data, index|
+    break if index == int_sea_level_data.size - 3
+  
+    first_window_sum = int_sea_level_data[index] + int_sea_level_data[index + 1] + int_sea_level_data[index + 2]
+    second_window_sum = int_sea_level_data[index + 1] + int_sea_level_data[index + 2] + int_sea_level_data[index + 3]
+  
+    counter += 1 if first_window_sum < second_window_sum
+  end
+
+  puts counter
+
+  return counter
+
+end
+
 DIRECTORY = __dir__
 SEA_LEVEL_REPORT = File.join(DIRECTORY, '../inputs/01.txt')
 SEA_LEVEL_DATA = File.read(SEA_LEVEL_REPORT)
 
-sonar_sweep(SEA_LEVEL_DATA)
-
-
-
+depth_measurement_increase(SEA_LEVEL_DATA)
+sliding_window_increase(SEA_LEVEL_DATA)

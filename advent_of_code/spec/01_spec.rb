@@ -2,7 +2,7 @@
 
 require '01'
 
-RSpec.describe sonar_sweep do
+RSpec.describe 'day 1: sonar_sweep' do
   let(:input) do
     <<~TXT
       199
@@ -19,8 +19,10 @@ RSpec.describe sonar_sweep do
   end
 
   it 'counts the number of times a depth measurement increases' do
-    solution = sonar_sweep(input)
+    expect(depth_measurement_increase(input)).to eq(7)
+  end
 
-    expect(solution).to eq(7)
+  it 'counts the number of times a three-measurement sliding window increases' do
+    expect(sliding_window_increase(input)).to eq(5)
   end
 end
