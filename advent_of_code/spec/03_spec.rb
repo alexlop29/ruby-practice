@@ -21,11 +21,11 @@ RSpec.describe 'binary diagnostic' do
   end
 
   it 'calculates the gamma rate in binary' do
-    expect(calculate_gamma_rate(input)).to match("10110")
+    expect(calculate_gamma_rate(input)).to match('10110')
   end
 
   it 'calculates the epsilon rate in binary' do
-    expect(calculate_epsilon_rate(input)).to match("01001")
+    expect(calculate_epsilon_rate(input)).to match('01001')
   end
 
   it 'calculates the power consumption in decimal' do
