@@ -31,4 +31,16 @@ RSpec.describe 'binary diagnostic' do
   it 'calculates the power consumption in decimal' do
     expect(calculate_power_consumption(input)).to eq(198)
   end
+
+  it 'calculates the oxygen generator rating' do
+    expect(calculate_oxygen_generator_rating(input)).to match('10111')
+  end
+
+  it 'calculates the CO2 scrubber rating' do
+    expect(calculate_co2_scrubber_rating(input)).to match('01010')
+  end
+
+  it 'calulcates the life support rating' do
+    expect(calculate_life_support_rating(input)).to eq(230)
+  end
 end
