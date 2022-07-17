@@ -1,0 +1,39 @@
+class Lanternfish
+  def initialize(internal_timer)
+    @internal_timer = internal_timer
+  end
+  def countdown
+    @internal_timer -= 1
+    if @internal_timer == -1
+      @internal_timer = 6
+      return true
+    end
+  end
+end
+
+def calculate_exponential_increase(input, days)
+  # Convert string, separated by commas, to array of integers
+  data = input.split(",").map(&:to_i)
+  
+  # Creates a new Lanternfish and sets the internal timer
+  data.each { |num| Lanternfish.new(num) }
+
+  days.times do
+    create_new_fish = 0
+    ObjectSpace.each_object(Lanternfish) { |i|
+      if i.countdown == true
+        create_new_fish += 1
+      end
+    }
+    create_new_fish.times do Lanternfish.new(8) end
+  end
+
+  puts ObjectSpace.each_object(Lanternfish).count
+#   return ObjectSpace.each_object(Lanternfish).count.to_i
+end
+
+# DIRECTORY = __dir__
+# DATA = File.join(DIRECTORY, '../inputs/06.txt')
+# READ_DATA = File.read(DATA)
+
+# calculate_exponential_increase(READ_DATA,80)
