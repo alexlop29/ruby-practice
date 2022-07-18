@@ -40,3 +40,7 @@ least_fuel_possible_with_cost_consumption(READ_DATA)
 
 # Output a variable in its standard format
 # puts horizontal_positions.inspect
+
+# An easier way to add numbers from one to n
+# (1..4).inject(:+) (add)
+# (1..4).inject(:*)
